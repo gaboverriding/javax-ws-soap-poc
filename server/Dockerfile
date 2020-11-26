@@ -14,4 +14,4 @@ FROM openjdk:8-jre-alpine3.9
 COPY --from=MAVEN_BUILD /target/server-1.0-SNAPSHOT.jar /server-1.0-SNAPSHOT.jar
 
 # set the startup command to execute the jar
-CMD ["java", "-jar", "/server-1.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/server-1.5-SNAPSHOT.jar"]
