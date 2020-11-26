@@ -11,7 +11,7 @@ RUN mvn clean package
 FROM openjdk:8-jre-alpine3.9
 
 # copy only the artifacts we need from the first stage and discard the rest
-COPY --from=MAVEN_BUILD /target/server-1.0-SNAPSHOT.jar /server-1.0-SNAPSHOT.jar
+COPY --from=MAVEN_BUILD /target/server-1.5-SNAPSHOT.jar /server-1.5-SNAPSHOT.jar
 
 # set the startup command to execute the jar
 CMD ["java", "-jar", "/server-1.5-SNAPSHOT.jar"]
