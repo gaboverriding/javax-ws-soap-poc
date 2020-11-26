@@ -16,6 +16,11 @@ Generación de cliente:
  Ejecución de la imagen:
  ``` docker container run --publish 8080:8080 --name mi-soap-webservice gaboverriding/soap-webservice:1.5-SNAPSHOT```
   
+  URL de WSDL
+  ``` http://localhost:8080/mysoapws/mensaje?wsdl ```
+  
+  
+  
  
  
 

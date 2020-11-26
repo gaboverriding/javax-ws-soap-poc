@@ -8,6 +8,7 @@ import javax.jws.WebService;
 public class OperacionesServiceImpl implements OperacionesService {
 
     public Operaciones getMensaje() {
+        System.out.println("Se ha invocado el metodo getMensaje del SOAP WebService");
         return new Operaciones("probando WebService SOAP");
     }
 }
