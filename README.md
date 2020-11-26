@@ -11,7 +11,10 @@ Generación de cliente:
  Pre-requisitos: OpenJDK 8
  
  Construcción de imagen: 
- ``` $ docker build -t gaboverriding/soap-webservice:1.0-SNAPSHOT . ```
+ ``` $ docker build -t gaboverriding/soap-webservice:1.5-SNAPSHOT . ```
+ 
+ Ejecución de la imagen:
+ ``` docker container run --publish 8080:8080 --name mi-soap-webservice gaboverriding/soap-webservice:1.5-SNAPSHOT```
   
  
  
